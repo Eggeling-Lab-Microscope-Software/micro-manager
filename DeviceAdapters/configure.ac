@@ -581,6 +581,7 @@ m4_define([device_adapter_dirs], [m4_strip([
    XCiteXT600
    XLight
    Xcite
+   Ximea
    YodnE600
    Yokogawa
    Zaber

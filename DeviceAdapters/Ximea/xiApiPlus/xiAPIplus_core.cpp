@@ -4,6 +4,7 @@
 //-------------------------------------------------------------------------------------------------------------------
 
 #include <stdio.h>
+#include <cstring>
 #include "xiapiplus.h"
 
 // forward declarations
@@ -129,7 +130,8 @@ void ReportException(XI_RETURN res, const char* location)
 		if (xiAPIplus_errorcodes_list[i].code == res)
 		{
 			// found
-			sprintf_s(descr,sizeof(descr),"%s (xiAPIplus_Camera::%s)",xiAPIplus_errorcodes_list[i].descr,location);
+			//sprintf_s(descr,sizeof(descr),"%s (xiAPIplus_Camera::%s)",xiAPIplus_errorcodes_list[i].descr,location);
+			sprintf(descr, "%s (xiAPIplus_Camera::%s)",xiAPIplus_errorcodes_list[i].descr,location);
 			break;
 		}
 	}

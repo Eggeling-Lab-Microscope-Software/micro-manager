@@ -283,7 +283,7 @@ public:
 		if (enum_values.find(val) == enum_values.end())
 		{
 			// not found
-			throw(std::exception("Value was not found among enumerators"));
+			throw(std::runtime_error("Value was not found among enumerators"));
 		}
 		else
 		{

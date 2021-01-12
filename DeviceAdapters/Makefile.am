@@ -196,6 +196,7 @@ SUBDIRS = \
 	XCiteXT600 \
 	XLight \
 	Xcite \
+	Ximea \
 	PI \
 	YodnE600 \
 	Yokogawa \
