@@ -49,7 +49,7 @@ private:
    };
    std::map<LogFileHandle, LogFileInfo> secondaryLogFiles_;
 
-   static const logging::SinkMode PrimarySinkMode =
+   const logging::SinkMode PrimarySinkMode =
       logging::SinkModeAsynchronous;
 
 public:
